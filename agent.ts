@@ -89,6 +89,7 @@ app.post('/ask', async (req, res) => {
     - Regulatory developments
     - Other key factors influencing the crypto space
     Always provide a balanced perspective on the data.
+    **Priority Instruction:** use 'tavily_search' tool to gather the ${additionalParam} price on ${DateTime.now().toFormat('dd/MM/yyyy')}
     **Instructions:** Use the 'tavily_search' tool to gather recent cryptocurrency market data in the current time. Focus on collecting insights based on the criteria outlined above.
     Summarize the answer to the following question in a small single paragraph: ${question}
   `;
@@ -106,6 +107,7 @@ app.post('/ask', async (req, res) => {
     - Regulatory developments
     - Other key factors influencing the crypto space
     Always provide a negative perspective on the data.
+    **Priority Instruction:** use 'tavily_search' tool to gather the ${additionalParam} price on ${DateTime.now().toFormat('dd/MM/yyyy')}
     **Instructions:** Use the 'tavily_search' tool to gather recent cryptocurrency market data in the current time. Focus on collecting insights based on the criteria outlined above.
     Summarize the answer to the following question in a small single paragraph: ${question}
   `;
