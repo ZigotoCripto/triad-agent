@@ -89,7 +89,7 @@ app.post('/ask', async (req, res) => {
     - Other key factors influencing the crypto space
     Always provide a balanced perspective on the data.
     **Instructions:** Use the 'tavily_search' tool to gather recent cryptocurrency market data. Focus on collecting insights based on the criteria outlined above.
-    Summarize the answer to the following question in a single paragraph: ${question}
+    Summarize the answer to the following question in a small single paragraph: ${question}
   `;
 
   const promptFlop = `
@@ -105,7 +105,7 @@ app.post('/ask', async (req, res) => {
     - Other key factors influencing the crypto space
     Always provide a negative perspective on the data.
     **Instructions:** Use the 'tavily_search' tool to gather recent cryptocurrency market data. Focus on collecting insights based on the criteria outlined above.
-    Summarize the answer to the following question in a single paragraph: ${question}
+    Summarize the answer to the following question in a small single paragraph: ${question}
   `;
 
   // HYPE Agent
