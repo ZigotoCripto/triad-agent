@@ -5,7 +5,7 @@ import path from 'path';
 
 const app = express();
 
-//  CORS
+// Configuração do CORS
 const corsOptions = {
   origin: ['https://api.triadfi.co', 'http://localhost:3000'],
   methods: ['GET', 'POST'],
@@ -14,7 +14,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-//
+// Função para executar o comando
 const executeCommand = (arg1: string, arg2: string, res: express.Response) => {
   const command = `npx tsx ${path.join(__dirname, 'agent.ts')} "${arg1}" "${arg2}"`;
 
@@ -54,7 +54,7 @@ app.get('/ask', (req, res) => {
   executeCommand(arg1 as string, arg2 as string, res);
 });
 
-// server
+// Inicializa o servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
