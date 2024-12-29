@@ -7,7 +7,7 @@ const app = express();
 
 // Configuração do CORS
 const corsOptions = {
-  origin: ['https://api.triadfi.co', 'http://localhost:3000'],
+  origin: ['https://api.triadfi.co', 'http://localhost:3000', 'https://goldfish-app-4r9uy.ondigitalocean.app/'],
   methods: ['GET', 'POST'],
 };
 
