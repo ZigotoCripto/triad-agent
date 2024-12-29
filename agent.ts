@@ -16,7 +16,7 @@ import { DateTime } from 'luxon';
 
 const app = express();
 app.use(cors({
-  origin: 'https://app.triadfi.co' // Restrict access to this domain
+  origin: 'https://api.triadfi.co/' // Restrict access to this domain
 }));
 
 app.use(express.json());
